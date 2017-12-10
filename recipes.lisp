@@ -127,6 +127,9 @@
      (turret           1   8    (iron-plate 20) (iron-gear 10) (copper-plate 10))
      (laser-turret     1   20   (steel-plate 20) (green-circuit 20) (battery 12))
 
+     (rocket-silo      1   30   (steel-plate 1000) (concrete 1000) (pipe 100) (blue-circuit 200)
+      (electric-engine 200))
+
      )))
 
 (defparameter *simple-chem-recipes*
@@ -165,7 +168,7 @@
 
 (defparameter *raws*
   '(crude-oil stone coal iron-ore copper-ore stone-brick iron-plate
-    copper-plate steel-plate water)
+    copper-plate steel-plate water concrete)
   "Anything you don't want to recurse on. Overrides default behaviour.")
 
 (defparameter *rate* 1)
